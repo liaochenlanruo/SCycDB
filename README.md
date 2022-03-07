@@ -42,6 +42,8 @@ Note: Kraken2 database could be downloaded from https://ccb.jhu.edu/software/kra
 
 <b>Example for using SCycDB_FunctionProfiler.PL:</b>
 
+`SCycDB_2020Mar.zip` should be decompressed and rename as `SCycDB_2020Mar` before the analysis.
+  
 perl SCycDB_FunctionProfiler.PL -d \<workdir\> -m \<diamond|usearch|blast\> -f \<filetype\> -s \<seqtype\> -si \<sample size info file\> -rs \<random sampling size\> -o \<outfile\>
   
 Detailed explanations: 
@@ -58,7 +60,7 @@ Detailed explanations:
 
 -rs: specify the number of sequences for random subsampling, if not specified, the lowest number in -si will be used.
 
--o : the output file for N cycle gene profiles.   
+-o : the output file for S cycle gene profiles.   
 
 
 <b>Example for using SCycDB_TaxonomyProfiler.PL:</b>
