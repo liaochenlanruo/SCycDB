@@ -46,9 +46,9 @@ if ( $method eq "diamond" ) {
   foreach my $file (@files) {
     my $out = $file;
     $out =~ s/$filetype/diamond/;
-    system("$diamond blastx $diamond_parameters -d ./SCycDB_2020Mar -q $file -o $out")
+    system("$diamond blastx $diamond_parameters -d ./SCycDB_2020Mar.dmnd -q $file -o $out")
       if $seqtype eq "nucl";
-    system("$diamond blastp $diamond_parameters -d ./SCycDB_2020Mar -q $file -o $out")
+    system("$diamond blastp $diamond_parameters -d ./SCycDB_2020Mar.dmnd -q $file -o $out")
       if $seqtype eq "prot";
     system("cp $out ./");
   }
